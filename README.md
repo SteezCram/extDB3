@@ -1,7 +1,7 @@
 # extDB3
 I have created this repository as an archive to download extDB3, since the repository was closed by bitbucket https://bitbucket.org/torndeco/extdb3/
 
-### Description
+# Description
 extDB3 is an Arma3 Addon for connecting to Databases (currently only MariaDB/MySQL).
 The main purpose for extDB3 is for persistent missions in Arma.
 Note it will require some knowledge about SQF & SQL to use.
