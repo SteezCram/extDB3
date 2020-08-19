@@ -1,0 +1,9 @@
+FLOSS Exception
+Free and Open Source Software ("FOSS") License Exception
+You can repackage extDB3.dll / extDB3.so (shared libary) along with your project, if your project is licensed under one of the following licenses.
+  An OSI approved licenses https://opensource.org/licenses/alphabetical
+  Arma Public License https://www.bistudio.com/community/licenses/arma-public-license
+  Arma Public License Share Alike https://www.bistudio.com/community/licenses/arma-public-license-share-alike
+
+Important: You will also need to include the extDB3-License-FLOSS-Exception.txt.
+This is to prevent confusion if someone grabs extDB3 from your project to use.
