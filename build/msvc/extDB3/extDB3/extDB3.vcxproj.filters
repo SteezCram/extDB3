@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\md5">
+      <UniqueIdentifier>{4ebd7c37-6255-45cb-b684-f05fb944a4c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\md5">
+      <UniqueIdentifier>{26157bfc-f410-45d5-a422-06897717900c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\mariaDB">
+      <UniqueIdentifier>{9f99ebf7-44a5-47dc-8bae-8de6b7c5065c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\mariaDB">
+      <UniqueIdentifier>{8a34e202-f85e-4d18-8ccd-8de37b9f9bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\protocols">
+      <UniqueIdentifier>{6fd90571-57b6-4973-af27-d584c6afd6c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\protocols">
+      <UniqueIdentifier>{e1b4913a-897b-4e8c-983b-403f532c3d94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\resource.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="src\sqfparser.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="src\abstract_ext.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ext.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="src\md5\md5.h">
+      <Filter>Fichiers d%27en-tête\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\abstract.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\binder.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\connector.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\pool.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\query.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\session.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\statement.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\mariaDB\exceptions.h">
+      <Filter>Fichiers d%27en-tête\mariaDB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\sql_custom.h">
+      <Filter>Fichiers d%27en-tête\protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\abstract_protocol.h">
+      <Filter>Fichiers d%27en-tête\protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\log.h">
+      <Filter>Fichiers d%27en-tête\protocols</Filter>
+    </ClInclude>
+    <ClInclude Include="src\protocols\sql.h">
+      <Filter>Fichiers d%27en-tête\protocols</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\memory_allocator.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sqfparser.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\test.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ext.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5\md5.cpp">
+      <Filter>Fichiers sources\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mariaDB\statement.cpp">
+      <Filter>Fichiers sources\mariaDB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mariaDB\binder.cpp">
+      <Filter>Fichiers sources\mariaDB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mariaDB\connector.cpp">
+      <Filter>Fichiers sources\mariaDB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mariaDB\pool.cpp">
+      <Filter>Fichiers sources\mariaDB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mariaDB\query.cpp">
+      <Filter>Fichiers sources\mariaDB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mariaDB\session.cpp">
+      <Filter>Fichiers sources\mariaDB</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\sql_custom.cpp">
+      <Filter>Fichiers sources\protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\log.cpp">
+      <Filter>Fichiers sources\protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="src\protocols\sql.cpp">
+      <Filter>Fichiers sources\protocols</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

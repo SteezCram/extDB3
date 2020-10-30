@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2c235d90-ecad-4c22-88cc-3dd4e904b84f}</ProjectGuid>
+    <RootNamespace>extDB3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>D:\Développement\C++ libs\tbb\lib\intel64\vc14;D:\Développement\C++ libs\mariadb-connector-c-3.1.10\lib;D:\Développement\C++ libs\boost_1_74_0\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\Users\tcroi\source\c++\libs\mariadb-connector-c-3.1.10\lib;C:\Users\tcroi\source\c++\libs\tbb_arma\build\vs2013\x64\Release-MT;C:\Users\tcroi\source\c++\libs\boost_1_74_0\lib64-msvc-14.2;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_x64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;EXTDB3_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\Développement\C++ libs\boost_1_74_0;D:\Développement\C++ libs\tbb\include;D:\Développement\C++ libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>tbbmalloc.lib;crypt32.lib;secur32.lib;mariadbclient.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NOMINMAX;NDEBUG;_WIN32_WINNT=0x0600;TBB_MALLOC;UNICODE;_UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";extDB3_x64_EXPORTS;BOOST_BIND_GLOBAL_PLACEHOLDERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>C:\Users\tcroi\source\c++\libs\tbb_arma\include;C:\Users\tcroi\source\c++\libs\mariadb-connector-c-3.1.10;C:\Users\tcroi\source\c++\libs;C:\Users\tcroi\source\c++\libs\boost_1_74_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>mariadbclient.lib;secur32.lib;crypt32.lib;shlwapi.lib;tbbmalloc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)extDB3_x64.dll</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\abstract_ext.h" />
+    <ClInclude Include="src\ext.h" />
+    <ClInclude Include="src\mariaDB\abstract.h" />
+    <ClInclude Include="src\mariaDB\binder.h" />
+    <ClInclude Include="src\mariaDB\connector.h" />
+    <ClInclude Include="src\mariaDB\exceptions.h" />
+    <ClInclude Include="src\mariaDB\pool.h" />
+    <ClInclude Include="src\mariaDB\query.h" />
+    <ClInclude Include="src\mariaDB\session.h" />
+    <ClInclude Include="src\mariaDB\statement.h" />
+    <ClInclude Include="src\md5\md5.h" />
+    <ClInclude Include="src\protocols\abstract_protocol.h" />
+    <ClInclude Include="src\protocols\log.h" />
+    <ClInclude Include="src\protocols\sql.h" />
+    <ClInclude Include="src\protocols\sql_custom.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\sqfparser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ext.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\mariaDB\binder.cpp" />
+    <ClCompile Include="src\mariaDB\connector.cpp" />
+    <ClCompile Include="src\mariaDB\pool.cpp" />
+    <ClCompile Include="src\mariaDB\query.cpp" />
+    <ClCompile Include="src\mariaDB\session.cpp" />
+    <ClCompile Include="src\mariaDB\statement.cpp" />
+    <ClCompile Include="src\md5\md5.cpp" />
+    <ClCompile Include="src\memory_allocator.cpp" />
+    <ClCompile Include="src\protocols\log.cpp" />
+    <ClCompile Include="src\protocols\sql.cpp" />
+    <ClCompile Include="src\protocols\sql_custom.cpp" />
+    <ClCompile Include="src\sqfparser.cpp" />
+    <ClCompile Include="src\test.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
