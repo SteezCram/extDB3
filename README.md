@@ -1,9 +1,9 @@
 # extDB3
-I have created this repository as an archive to download extDB3, since the repository was closed by bitbucket https://bitbucket.org/torndeco/extdb3/. But now I started to maintain this actively, if anyone want to help me feel free to make an issue or make a pull request 😉!
+I have created this repository as an archive to download extDB3, since the repository was closed by bitbucket https://bitbucket.org/torndeco/extdb3/.
 
 A x64 version for Linux is now available! 
 
-I released a new version for Windows that changes small things in the library. The new version will be available soon for Linux.
+I released a new version for Windows that changes small things in the library.
 
 # Description
 extDB3 is an Arma3 Addon for connecting to Databases (currently only MariaDB/MySQL).
